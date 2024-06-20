@@ -11,21 +11,26 @@
 https://git-scm.com/downloads
 
 2. GitHub에 새 저장소를 생성한다.
-3. 생성된 저장소의 주소를 기억해두자.
+3. 
+4. 생성된 저장소의 주소를 기억해두자.
    - 주소는 반드시 HTTPS 주소를 복사한다.
-4. 파일탐색기로 업로드해야할 폴더로 이동한 후, 마우스 오른쪽 버튼 눌러서 "Git Bash Here"를 누른다.
-5. 초기 설정을 해준다.
+     
+5. 파일탐색기로 업로드해야할 폴더로 이동한 후, 마우스 오른쪽 버튼 눌러서 "Git Bash Here"를 누른다.
+   
+6. 초기 설정을 해준다.<br>
+   
 git config --global user.name "유저이름"
 git config --global user.email "유저 이메일"
 잘못이해하면 앞에 'user.name'에 깃허브 이름을 쓰고 마는 경우가 있는데 있는 그대로 user.name이라고 타자치고 " " 이 안에 본인 깃허브 이름을 넣는다, 유저 이메일도 마찬가지.
 ![image](https://github.com/Meegu80/Git_Hub/assets/79518297/9f519646-1d7f-41d0-86b6-1fe72cf2b93b)
-6. 파일 준비
+
+7. 파일 준비
 git init      #.git 파일 생성하는 것으로 그냥 똑같이 타자친다, 아무 변화 없이 줄바꿈만 되었다면 실행 완료.
 git add .     #선택한 프로젝트 폴더 내의 모든 파일 관리, add치고 스페이스바한번치고 .(콤마) 엔터.
 		-> 특정파일만 하고 싶다면  git add 파일이름.파일형식  ex) git add a.txt
 git status    #상태확인 (이건 안해도 된다)
 git commit -m "주석"     #커밋 복붙이 Shift+Ins키다, 실행되면 대상파일들 목록이 주루룩 화면에 올라간다.
-7. 업로드하기
+8. 업로드하기
 git remote add origin (위 3번에서 저장한 깃허브 저장소 주소)-HTTPS주소다. origin타자치고 공백 바로 주소. origin이 기존에 만들어졌다며 안되는 경우에는 main이나 master로 만들어라.
 아래는 main으로 만든 경우이다.
 ![image](https://github.com/Meegu80/Git_Hub/assets/79518297/9eaf5b4a-77dd-42e6-89bc-c083c71fabc8)
