@@ -1,0 +1,19 @@
+목적 : 코밋 1,2 를 실행하고 이력을 확인한다. 
+
+빈 폴더를 만들고 이동한 후에 마우스 오른쪽 버튼 누르고 git bash here 누른후 아래를 따라해 보세요
+
+git init	깃 초기화
+ls -la 	디렉초리 안 파일 검색 모두(숨김파일 포함)
+git status		현재 상태 출력
+vim hello.txt	hello.txt파일을 만든다, 편집기를 열게된다.
+		i를 누르면 편집모드로 전환됨
+		다 입력하고 ESC키를 누르고 ':wq'를 누르면 저장하고 나옴
+git add hello.txt 	hello파일을 스테이징에 올립니다. 
+git add . 		파일을 다 스테이징에 올립니다.
+git commit -m "message"	message라고 커밋을 한다.
+git log		저장된 버전 확인(커밋 멘트를 보여줌)
+vim hello.txt	똑같이 i나 a눌러서 삽입, esc누르고 ':wq'엔터
+git commit -am "message2"	message2라고 커밋을 한다.
+git log		커밋1,2 보임
+
+
